@@ -1,0 +1,45 @@
+{
+  "root": true,
+  "env": {
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:node/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/typescript",
+    "plugin:security/recommended",
+    "plugin:node/recommended-module",
+    "xo",
+    "xo-typescript",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": ["./tsconfig.json", "./tsconfig.build.json"]
+  },
+  "plugins": ["node", "@typescript-eslint", "import", "security", "prettier"],
+  "ignorePatterns": ["dist", "node_modules"],
+  "settings": {},
+  "rules": {
+    "import/no-cycle": "error",
+    "import/no-deprecated": "error",
+    "import/no-named-as-default": "error",
+    "import/no-unused-modules": "error",
+    "no-warning-comments": "off",
+    "node/no-missing-import": "off",
+    "new-cap": "off",
+    "@typescript-eslint/interface-name-prefix": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/naming-convention": "off",
+    "capitalized-comments": "off",
+    "node/no-unsupported-features/es-syntax": "off",
+    "func-names": ["error", "always"],
+    "@typescript-eslint/no-redeclare": "off"
+  }
+}
