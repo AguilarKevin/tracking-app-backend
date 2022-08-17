@@ -11,8 +11,6 @@
     "plugin:import/typescript",
     "plugin:security/recommended",
     "plugin:node/recommended-module",
-    "xo",
-    "xo-typescript",
     "plugin:prettier/recommended"
   ],
   "parser": "@typescript-eslint/parser",

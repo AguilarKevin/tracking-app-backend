@@ -28,12 +28,10 @@
   "dependencies": {
     "@prisma/client": "^4.2.1",
     "body-parser": "^1.20.0",
-    "class-validator": "^0.13.2",
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "morgan": "^1.10.0",
-    "prisma-class-validator-generator": "^0.2.0",
     "tslib": "^2.4.0"
   },
   "devDependencies": {
@@ -47,10 +45,9 @@
     "@typescript-eslint/eslint-plugin": "^5.33.1",
     "@typescript-eslint/parser": "^5.33.1",
     "chai": "^4.3.6",
+    "class-validator": "^0.13.2",
     "eslint": "^8.22.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-config-xo": "^0.40.0",
-    "eslint-config-xo-typescript": "^0.50.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.2.1",
