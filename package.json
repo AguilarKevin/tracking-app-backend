@@ -15,7 +15,7 @@
     "dev": "ts-node-esm --project ./tsconfig.build.json src",
     "lint:all": "pnpm run lint && pnpm run lint:ts",
     "lint:fix": "pnpm run lint --fix",
-    "lint:ts": "pnpm run build --noEmit",
+    "lint:ts": "pnpm prisma generate && pnpm run build --noEmit",
     "lint": "eslint --ext .js,.ts src",
     "start": "node dist/index.js",
     "test": "tap --node-arg=--loader=ts-node/esm --test-regex=\".(spec|test).([mc]js|[jt]sx?)$\" --no-coverage",
