@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@prisma/client': ^4.2.1
   '@types/body-parser': ^1.19.2
   '@types/chai': ^4.3.3
   '@types/cors': ^2.8.12
@@ -33,6 +34,7 @@ specifiers:
   typescript: ^4.7.4
 
 dependencies:
+  '@prisma/client': 4.2.1_prisma@4.2.1
   body-parser: 1.20.0
   cors: 2.8.5
   dotenv: 16.0.1
@@ -387,10 +389,27 @@ packages:
       fastq: 1.13.0
     dev: true
 
+  /@prisma/client/4.2.1_prisma@4.2.1:
+    resolution: {integrity: sha512-PZBkY60+k5oix+e6IUfl3ub8TbRLNsPLdfWrdy2eh80WcHTaT+/UfvXf/B7gXedH7FRtbPFHZXk1hZenJiJZFQ==}
+    engines: {node: '>=14.17'}
+    requiresBuild: true
+    peerDependencies:
+      prisma: '*'
+    peerDependenciesMeta:
+      prisma:
+        optional: true
+    dependencies:
+      '@prisma/engines-version': 4.2.0-33.2920a97877e12e055c1333079b8d19cee7f33826
+      prisma: 4.2.1
+    dev: false
+
+  /@prisma/engines-version/4.2.0-33.2920a97877e12e055c1333079b8d19cee7f33826:
+    resolution: {integrity: sha512-tktkqdiwqE4QhmE088boPt+FwPj1Jub/zk+5F6sEfcRHzO5yz9jyMD5HFVtiwxZPLx/8Xg9ElnuTi8E5lWVQFQ==}
+    dev: false
+
   /@prisma/engines/4.2.1:
     resolution: {integrity: sha512-0KqBwREUOjBiHwITsQzw2DWfLHjntvbqzGRawj4sBMnIiL5CXwyDUKeHOwXzKMtNr1rEjxEsypM14g0CzLRK3g==}
     requiresBuild: true
-    dev: true
 
   /@tsconfig/node10/1.0.9:
     resolution: {integrity: sha512-jNsYVVxU8v5g43Erja32laIDHXeoNvFEpX33OK4d6hljo3jDhCBDhx5dhCCTMWUojscpAagGiRkBKxpdl9fxqA==}
@@ -2645,7 +2664,6 @@ packages:
     requiresBuild: true
     dependencies:
       '@prisma/engines': 4.2.1
-    dev: true
 
   /process-on-spawn/1.0.0:
     resolution: {integrity: sha512-1WsPDsUSMmZH5LeMLegqkPDrsGgsWwk1Exipy2hvB0o/F0ASzbpIctSCcZIK1ykJvtTJULEH+20WOFjMvGnCTg==}
