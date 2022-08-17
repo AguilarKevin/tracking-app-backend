@@ -1,12 +1,12 @@
-import {User} from '@prisma/client'
 import 'dotenv/config'
-import prisma from './prisma-client.js'
-
+import {PrismaClient} from '@prisma/client'
 import {app, start} from './server.js'
+
+const prisma = new PrismaClient()
 
 start(Number(process.env.PORT) || 3000)
 
 app.get('/users', async (_, res) => {
-  const users: User[] = await prisma.user.findMany()
+  const users = await prisma.user.findMany()
   res.json(users)
 })
