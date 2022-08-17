@@ -5,10 +5,6 @@ generator client {
   provider = "prisma-client-js"
 }
 
-generator class_validator {
-  provider = "prisma-class-validator-generator"
-  output = "../generated"
-}
 
 datasource db {
   provider = "mongodb"

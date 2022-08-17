@@ -18,9 +18,9 @@
     "lint:ts": "pnpm run build --noEmit",
     "lint": "eslint --ext .js,.ts src",
     "start": "node dist/index.js",
-    "test": "tap --node-arg=--loader=ts-node/esm --test-regex=\".(spec|test).([mc]js|[jt]sx?)$\" --no-coverage ",
+    "test": "tap --node-arg=--loader=ts-node/esm --test-regex=\".(spec|test).([mc]js|[jt]sx?)$\" --no-coverage",
     "test:watch": "tap --watch",
-    "test:cov": "tap"
+    "test:cov": "tap --node-arg=--loader=ts-node/esm --test-regex=\".(spec|test).([mc]js|[jt]sx?)$\""
   },
   "keywords": [],
   "author": "",
